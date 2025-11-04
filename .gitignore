@@ -26,27 +26,7 @@ env.bak/
 .ipynb_checkpoints/
 notebooks/.ipynb_checkpoints/
 
-# ========================
-# Data Files
-# ========================
-data/raw/
-data/processed/
-*.csv
-*.xlsx
-*.ods
-*.json
-*.zip
-*.tar.gz
 
-# ========================
-# Models & Artifacts
-# ========================
-models/
-*.pkl
-*.joblib
-*.h5
-*.pt
-*.onnx
 
 # ========================
 # Logs & Cache
@@ -82,9 +62,7 @@ dist/
 # ========================
 # Docker Related
 # ========================
-Dockerfile.*
-docker-compose.yml
-docker-compose.override.yml
+
 *.tar
 *.pid
 **/.dockerignore
