@@ -8,17 +8,18 @@ Agricultural productivity is a critical factor influencing food security and the
 ### Objectives
 - To develop a data-driven model that predicts crop yield (tons per hectare) based on key environmental and agricultural features.
 - To identify which factors (e.g., rainfall, temperature, pesticide use) most influence yield outcomes.
-- To provide an easy-to-use web application for yield prediction and decision support.
+- To provide an easy-to-use **REST API** for yield prediction and decision support.
 
 ### Challenges
-- Handling data inconsistencies and missing values across multiple countries and years.
-- Accounting for diverse climatic and soil conditions.
+- Handling data inconsistencies and missing values across multiple countries and years.  
+- Accounting for diverse climatic and soil conditions.  
 - Selecting and tuning models that generalize well across different crops and regions.
 
 ### Expected Outcome
-- A trained machine learning model capable of accurately predicting crop yield.
-- A user-friendly Streamlit web application for interactive predictions.
+- A trained machine learning model capable of accurately predicting crop yield.  
+- A user-friendly **FastAPI web service** for real-time predictions.  
 - A reproducible, containerized ML pipeline deployable to the cloud.
+
 
 ---
 
@@ -62,7 +63,7 @@ Agricultural productivity is a critical factor influencing food security and the
 | **Data Processing** | Pandas, NumPy |
 | **Visualization** | Matplotlib, Seaborn |
 | **Modeling** | Scikit-learn, XGBoost |
-| **Web Framework** | Streamlit |
+| **Web Framework** | FastAPI / Flask |
 | **Model Serialization** | Joblib |
 | **Containerization** | Docker |
 | **Cloud Deployment** | Hugging Face Spaces (Docker Space) |
@@ -116,7 +117,15 @@ crop-yield-predictor/
 
 ## 6. Future Enhancements
 
+- Integrate soil and humidity features for more robust predictions.
 
+- Implement SHAP or LIME for feature explainability.
+
+- Extend to time-series models (LSTM or Prophet) for future yield forecasting.
+
+- Add an interactive dashboard frontend (React or Streamlit) consuming the API.
+
+- Automate deployment with GitHub Actions + Docker CI/CD.
 
 ---
 
