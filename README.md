@@ -107,7 +107,7 @@ crop-yield-predictor/
 
 ## 6. Instructions to Reproduce
 
-### A. Run Locally
+### A. Run Locally (Not Codespaces)
 
 **Step 1: Clone the Repository**
 ```bash
