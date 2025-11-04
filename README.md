@@ -99,23 +99,76 @@ crop-yield-predictor/
 
 ### Step 3: Model Training
 
-### Step 4: Model Deployment (Streamlit App)
+### Step 4: Model Deployment (API Development)
+
+### Step 5: Model Evaluation 
 
 ---
 
-## 5. Containerization and Cloud Deployment
+## 6. Instructions to Reproduce
 
-### Docker Setup
+### A. Run Locally
+
+**Step 1: Clone the Repository**
+```bash
+git clone https://github.com/<your-username>/crop-yield-predictor.git
+cd crop-yield-predictor
+```
+
+**Step 2: Create and Activate Virtual Environment**
+```bash
+python -m venv venv
+# Activate the environment
+source venv/bin/activate   # For Linux/Mac
+venv\Scripts\activate      # For Windows
+```
+
+**Step 3: Install Dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+**Step 4: Run the FastAPI App**
 
 
 
-### Cloud Deployment
+API will be available at:
 
+---
+
+### B. Using Docker
+
+**Step 1: Build the Docker Image**
+
+
+**Step 2: Run the Docker Container**
+
+
+
+Visit http://localhost:8000/docs for Swagger UI.
+
+---
+
+### C. Cloud Deployment
+
+- Deploy the containerized app on Hugging Face Spaces.
+
+- Push your project with Dockerfile to GitHub.
+
+- On Hugging Face → Create a new Space → Choose Docker SDK.
+
+- Link your GitHub repo or upload files manually.
+
+- Build and run automatically on Hugging Face infrastructure.
+
+App will be accessible at:
+
+https://huggingface.co/spaces/<username>/crop-yield-predictor
 
 
 --- 
 
-## 6. Future Enhancements
+## 8. Future Enhancements
 
 - Integrate soil and humidity features for more robust predictions.
 
@@ -126,7 +179,3 @@ crop-yield-predictor/
 - Add an interactive dashboard frontend (React or Streamlit) consuming the API.
 
 - Automate deployment with GitHub Actions + Docker CI/CD.
-
----
-
-## 7. References 
