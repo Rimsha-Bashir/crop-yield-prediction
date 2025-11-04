@@ -1,0 +1,109 @@
+# ========================
+# Python & FastAPI Project
+# ========================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# ========================
+# Virtual Environments
+# ========================
+venv/
+.env/
+.venv/
+env/
+ENV/
+env.bak/
+
+# ========================
+# Jupyter Notebooks
+# ========================
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# ========================
+# Data Files
+# ========================
+data/raw/
+data/processed/
+*.csv
+*.xlsx
+*.ods
+*.json
+*.zip
+*.tar.gz
+
+# ========================
+# Models & Artifacts
+# ========================
+models/
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.onnx
+
+# ========================
+# Logs & Cache
+# ========================
+*.log
+*.out
+*.err
+*.tmp
+*.bak
+*.pid
+.cache/
+__pycache__/
+*.sqlite3
+
+# ========================
+# Build / Distribution
+# ========================
+build/
+dist/
+*.egg-info/
+*.spec
+
+# ========================
+# Environment / Secrets
+# ========================
+.env
+.env.local
+.env.production
+.env.dev
+*.pem
+*.key
+
+# ========================
+# Docker Related
+# ========================
+Dockerfile.*
+docker-compose.yml
+docker-compose.override.yml
+*.tar
+*.pid
+**/.dockerignore
+**/.docker/
+
+# ========================
+# IDE / Editor
+# ========================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+
+# ========================
+# OS Specific
+# ========================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?

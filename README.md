@@ -111,8 +111,8 @@ crop-yield-predictor/
 
 **Step 1: Clone the Repository**
 ```bash
-git clone https://github.com/<your-username>/crop-yield-predictor.git
-cd crop-yield-predictor
+git clone https://github.com/<your-username>/crop-yield-prediction.git
+cd crop-yield-prediction
 ```
 
 **Step 2: Create and Activate Virtual Environment**
@@ -163,7 +163,7 @@ Visit http://localhost:8000/docs for Swagger UI.
 
 App will be accessible at:
 
-https://huggingface.co/spaces/<username>/crop-yield-predictor
+https://huggingface.co/spaces/<username>/crop-yield-prediction
 
 
 --- 
