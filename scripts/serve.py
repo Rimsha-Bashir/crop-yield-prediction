@@ -1,7 +1,13 @@
 import pickle
+
 from flask import Flask 
 from flask import request
 from flask import jsonify 
+
+import pandas as pd
+import xgboost as xgb
+
+from sklearn.feature_extraction import DictVectorizer
 
 
 eta = 0.1
