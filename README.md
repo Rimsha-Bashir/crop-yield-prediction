@@ -115,24 +115,54 @@ git clone https://github.com/<your-username>/crop-yield-prediction.git
 cd crop-yield-prediction
 ```
 
-**Step 2: Create and Activate Virtual Environment**
+**Step 2: Install Pipenv**
+
 ```bash
-python -m venv venv
-# Activate the environment
-source venv/bin/activate   # For Linux/Mac
-venv\Scripts\activate      # For Windows
+pip install pipenv 
 ```
 
-**Step 3: Install Dependencies**
-```bash
-pip install -r requirements.txt
+**Step 3: Install Dependencies via Pipenv**
+
+```bash 
+pipenv install --deploy --ignore-pipfile
 ```
 
-**Step 4: Run the FastAPI App**
+**Step 4: Activate pipenv and run the FastAPI App**
+
+```bash
+pipenv shell
+cd scripts
+python serve.py 
+```
+
+**Step 5: Test the API**
+
+You can send a POST request to test prediction. Example Below:
+
+```bash
+curl -X POST -H "Content-Type: application/json" \
+     -d '{
+           "country": "albania",
+           "crop": "soybeans",
+           "year": 2016,
+           "average_rain_fall_mm_per_year": 480.0,
+           "pesticide_tonnes": 14190,
+           "avg_temp": 18
+         }' \
+     http://localhost:9696/predict
+```
+Or, simply open [scripts/serve-test.ipynb](./scripts/serve-test.ipynb) and run the notebook to test predictions interactively.
 
 
+You’ll receive a JSON response similar to:
 
-API will be available at:
+```json
+{
+  "predicted_yield": 20016.26
+}
+```
+
+![curl-command](./images/curl-command.png)
 
 ---
 
@@ -140,12 +170,21 @@ API will be available at:
 
 **Step 1: Build the Docker Image**
 
+```bash
+$ docker build -t crop-yield-app .
+```
 
 **Step 2: Run the Docker Container**
 
+```bash
+$ docker run -it --rm -p 9696:9696 crop-yield-app
 
+$ docker run -it --rm --entrypoint=bash crop-yield-app # overriding entry point to start with a shell. 
+```
 
-Visit http://localhost:8000/docs for Swagger UI.
+**Step 3: Go to http://localhost:9696/ to test the app**
+
+![app-frontend](./images/app-frontend.png)
 
 ---
 

@@ -1,0 +1,66 @@
+/* General body styling */
+body {
+    background-color: #f7f9fc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Card container styling */
+.card {
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+/* Headline */
+.card h2 {
+    font-weight: 600;
+    color: #1f2937;
+}
+
+/* Labels and inputs */
+.form-label {
+    font-weight: 500;
+    color: #374151;
+}
+
+.form-control, .form-select {
+    border-radius: 0.5rem;
+    border: 1px solid #d1d5db;
+    padding: 0.5rem 0.75rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #10b981;
+    box-shadow: 0 0 0 0.2rem rgba(16, 185, 129, 0.25);
+}
+
+/* Button styling */
+.btn-success {
+    background-color: #10b981;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.btn-success:hover {
+    background-color: #059669;
+}
+
+/* Prediction result */
+.result {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #065f46;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .card {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+}
