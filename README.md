@@ -73,21 +73,7 @@ Agricultural productivity is a critical factor influencing food security and the
 
 ## 6. Folder Structure
 
-crop-yield-predictor/
-├── data/
-│   └── 
-├── models/
-│   └── 
-├── notebooks/
-│   ├── 
-│   └── 
-├── src/
-│   └── 
-├── app.py
-├── requirements.txt
-├── Dockerfile
-├── README.md
-└── .gitignore
+![folder-structure](./images/folder-structure.png)
 
 
 ---
