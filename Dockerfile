@@ -22,8 +22,8 @@ COPY static/ ./static
 COPY model/ ./model
 
 # Expose port
-EXPOSE 9696
+EXPOSE 7860
 
 # Run app with Gunicorn
 # --chdir ensures Gunicorn starts in scripts so "serve:app" works
-CMD ["gunicorn", "--chdir", "scripts", "--bind", "0.0.0.0:9696", "serve:app", "--workers", "3", "--threads", "2"]
+CMD ["gunicorn", "--chdir", "scripts", "--bind", "0.0.0.0:7860", "serve:app", "--workers", "3", "--threads", "2"]

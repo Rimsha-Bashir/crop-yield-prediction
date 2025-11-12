@@ -66,4 +66,4 @@ def predict_endpoint():
 
 if __name__ == "__main__":
     # Debug server; accessible on local network
-    app.run(host="0.0.0.0", port=9696, debug=True)
+    app.run(host="0.0.0.0", port=7860, debug=True)
