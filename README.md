@@ -358,21 +358,37 @@ $ docker run -it --rm --entrypoint=bash crop-yield-app # overriding entry point 
 
 ---
 
-### C. Cloud Deployment
+C. Cloud Deployment
 
-- Deploy the containerized app on Hugging Face Spaces.
+You can run this app in the cloud via **Hugging Face Spaces** using the Docker container we’ve prepared.  
 
-- Push your project with Dockerfile to GitHub.
+**Steps to deploy or reproduce:**
 
-- On Hugging Face → Create a new Space → Choose Docker SDK.
+1. **Push your project to GitHub**  
+   Ensure your repository includes:
+   - `Dockerfile`
+   - `scripts/`
+   - `model/`
+   - `templates/`
+   - `static/`
 
-- Link your GitHub repo or upload files manually.
+2. **Create a Hugging Face Space**  
+   - Go to [Hugging Face Spaces](https://huggingface.co/spaces).  
+   - Click **Create New Space**.  
+   - Choose **Docker** as the SDK type.  
+   - Link your GitHub repository **or** upload the project files manually.
 
-- Build and run automatically on Hugging Face infrastructure.
+3. **Build and run**  
+   Hugging Face will automatically build the Docker container and run your app.  
 
-App will be accessible at:
+4. **Access the app**  
+   Once deployed, the app will be available at: `https://huggingface.co/spaces/<your-username>/<your-space-name>`
+   
+   
+The live version of this app is available at:  
+[Crop Yield Prediction App](https://huggingface.co/spaces/Rimsha-Bashir/Crop-Yield-Prediction-App)  
 
-https://huggingface.co/spaces/<username>/crop-yield-prediction
+> **Note:** Free Hugging Face Spaces may take a few seconds to start after periods of inactivity.
 
 
 ----------------- 
