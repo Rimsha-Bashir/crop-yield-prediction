@@ -139,7 +139,7 @@ This step involves exploring and understanding the dataset through statistical s
 - **Feature Correlation**  
   Analyzed correlations among numerical features to identify potential relationships and multicollinearity.
 
-  <img src="./images/corr.png" alt="Feature correlation" width="55%"/>
+  <img src="./images/corr.png" alt="Feature correlation" width="60%"/>
 
     **Key Insights:**  
     - There's a moderate correlation between `avg_temp` and `average_rain_fall_mm_per_year`, i.e when average temperature grows, the average rainfall grows as well.
@@ -153,7 +153,7 @@ This step involves exploring and understanding the dataset through statistical s
 - **Average Yield by Country**  
   Examined the average crop yield across different countries to understand regional variations.
 
-  <img src="./images/country-yield.png" alt="Average Yield by Country" width="55%"/>
+  <img src="./images/country-yield.png" alt="Average Yield by Country" width="60%"/>
 
     **Key Insights:**
     - UK produces the highest crop yields, followed by Belgium and Denmark
@@ -168,7 +168,7 @@ This step involves exploring and understanding the dataset through statistical s
 - **Average Pesticide Usage Over the Years and its relationship with yield**  
   Explored changes in pesticide usage across years to identify long-term usage patterns.
 
-  <img src="./images/yield-vs-pesticides.png" alt="yield-vs-pesticides" width="55%"/>
+  <img src="./images/yield-vs-pesticides.png" alt="yield-vs-pesticides" width="60%"/>
 
 
     **Key Insights:**
