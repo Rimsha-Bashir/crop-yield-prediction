@@ -16,13 +16,11 @@ crops = sorted([
     "sorghum",
     "rice, paddy",
     "cassava",
-    "maize",
     "potatoes",
-    "wheat"
+    "wheat",
     "yams",
     "plantains and others",
-    "sweet potatoes",
-
+    "sweet potatoes"
 ])
 
 # Generate a sorted list of country names for dropdown
