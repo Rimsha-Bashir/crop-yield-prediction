@@ -82,7 +82,7 @@ The raw datasets were merged and cleaned through preprocessing steps to create a
 
 ## 6. Folder Structure
 
-![folder-structure](./images/folder-structure.png)
+<img src="./images/folder-structure.png" alt="folder-structure" width=60%/>
 
 
 ---
