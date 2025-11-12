@@ -1,6 +1,6 @@
 # Crop Yield Prediction using Machine Learning
 
-<imag src="./images/sunlit-paddy-field-with-ripe-yellowing-rice-free-photo.jpg" alt="crop image" width="100%"/>
+<img src="./images/sunlit-paddy-field-with-ripe-yellowing-rice-free-photo.jpg" alt="crop image" width="100%"/>
 
 ## 1. Problem Statement
 
@@ -80,7 +80,7 @@ The raw datasets were merged and cleaned through preprocessing steps to create a
 
 ---
 
-## 6. Folder Structure
+## 4. Folder Structure
 
 <img src="./images/folder-structure.png" alt="folder-structure" width="60%"/>
 
@@ -371,7 +371,7 @@ https://huggingface.co/spaces/<username>/crop-yield-prediction
 
 --- 
 
-## 8. Future Enhancements
+## 7. Future Enhancements
 
 - Integrate soil and humidity features for more robust predictions.
 
