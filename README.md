@@ -125,6 +125,8 @@ This step focuses on preparing and cleaning the raw datasets to ensure data cons
 - **Output**  
   Exported the cleaned and consolidated dataset as **`yield_final.csv`** for subsequent analysis and modeling.
 
+-----------------
+
 ### Step 2: Exploratory Data Analysis (EDA)
 
 **Notebook:** [02_EDA.ipynb](./notebooks/02_EDA.ipynb)
@@ -182,6 +184,9 @@ This step involves exploring and understanding the dataset through statistical s
     **Key Insights:**
     - Pesticide usage tends to be lower during periods of lower temperature.
     - As temperatures rise, pesticide usage generally increases.
+
+
+-----------------
 
 
 ### Step 3: Model Training and Tuning
@@ -243,9 +248,10 @@ The XGBoost model was implemented to leverage gradient boosting for improved pre
 
 ---
 
-**Summary:**  
+#### Summary 
 Each model was evaluated using standard regression metrics such as **R²**, **MAE**, and **RMSE**. While Linear Regression provided a baseline, Random Forest and XGBoost demonstrated superior performance, with XGBoost achieving the best balance between bias and variance.
 
+---
 
 ### Step 4: Model Deployment (API Development)
 
@@ -267,7 +273,7 @@ The API provides endpoints for making predictions using the preprocessed and ser
 - **Response Handling:**  
   Returns predicted yield values in a structured JSON format.
 
----
+-----------------
 
 ## 6. Instructions to Reproduce
 
@@ -369,7 +375,7 @@ App will be accessible at:
 https://huggingface.co/spaces/<username>/crop-yield-prediction
 
 
---- 
+----------------- 
 
 ## 7. Future Enhancements
 
