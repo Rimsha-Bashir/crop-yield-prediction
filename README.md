@@ -297,7 +297,7 @@ pip install pipenv
 pipenv install --deploy --ignore-pipfile
 ```
 
-**Step 4: Activate pipenv and run the FastAPI App**
+**Step 4: Activate pipenv and run the Flask App**
 
 ```bash
 pipenv shell
