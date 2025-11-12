@@ -319,7 +319,7 @@ curl -X POST -H "Content-Type: application/json" \
            "pesticide_tonnes": 14190,
            "avg_temp": 18
          }' \
-     http://localhost:9696/predict
+     http://localhost:7860/predict
 ```
 Or, simply open [scripts/serve-test.ipynb](./scripts/serve-test.ipynb) and run the notebook to test predictions interactively.
 
@@ -347,12 +347,12 @@ $ docker build -t crop-yield-app .
 **Step 2: Run the Docker Container**
 
 ```bash
-$ docker run -it --rm -p 9696:9696 crop-yield-app
+$ docker run -it --rm -p 7860:7860 crop-yield-app
 
 $ docker run -it --rm --entrypoint=bash crop-yield-app # overriding entry point to start with a shell. 
 ```
 
-**Step 3: Go to http://localhost:9696/ to test the app**
+**Step 3: Go to http://localhost:7860/ to test the app**
 
 <img src="./images/app-frontend.png" alt="app-frontend" width="60%"/>
 
@@ -383,7 +383,7 @@ You can run this app in the cloud via **Hugging Face Spaces** using the Docker c
 
 4. **Access the app**  
    Once deployed, the app will be available at: `https://huggingface.co/spaces/<your-username>/<your-space-name>`
-   
+
    
 The live version of this app is available at:  
 [Crop Yield Prediction App](https://huggingface.co/spaces/Rimsha-Bashir/Crop-Yield-Prediction-App)  
