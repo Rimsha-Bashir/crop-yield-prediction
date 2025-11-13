@@ -299,6 +299,10 @@ pipenv --version
 pipenv install --deploy --ignore-pipfile
 ```
 
+> 💡 **TIP:**
+> If you see a notice like “Pipenv found itself running within a virtual environment…”, it means you’re already inside another project’s virtual environment (e.g. (venv)). Deactivate that one first with `deactivate` command before running Pipenv commands 
+> here.
+
 **Step 4: Activate pipenv and run the Flask App**
 
 ```bash
