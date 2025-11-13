@@ -289,6 +289,8 @@ cd crop-yield-prediction
 
 ```bash
 pip install pipenv 
+pipenv --version
+
 ```
 
 **Step 3: Install Dependencies via Pipenv**
