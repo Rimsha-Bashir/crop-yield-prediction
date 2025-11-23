@@ -364,7 +364,7 @@ $ docker run -it --rm --entrypoint=bash crop-yield-app # overriding entry point 
 
 ---
 
-C. Cloud Deployment
+### C. Cloud Deployment
 
 You can run this app in the cloud via **Hugging Face Spaces** using the Docker container we’ve prepared.  
 
